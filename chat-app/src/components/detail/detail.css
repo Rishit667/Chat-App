@@ -1,0 +1,120 @@
+.detail{
+  flex: 1;
+  overflow-y: auto; /* Allow vertical scrolling */
+    height: 100%; /* Adjust as needed */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+
+    /* Hide scrollbar for WebKit browsers */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+  .user2{
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid gray;
+
+    img{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+.info{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+    .option{
+
+      .title{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+      
+        img{
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          object-fit: cover;
+          padding: 10px;
+          cursor: pointer;
+          background-color: rgba(90, 85, 85, 0.519); 
+        }
+      }
+
+      .photos{
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+
+        .photoItem{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .photoDetail{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            img{
+              width: 40px;
+              height: 40px;
+              object-fit: cover;
+              border-radius: 5px;
+            };
+
+            span{
+              font-size: 15px;
+              color: rgb(202, 195, 195);
+            }
+          }
+
+            .downloadpng{
+              width: 30px;
+              height: 30px;
+              padding: 10px;
+              background-color: gray;
+              border-radius: 50%;
+              cursor: pointer;
+            }
+
+        }
+
+      }
+    }  
+
+    button{
+      padding: 10px 20px;
+      background-color: rgba(231, 46, 46, 0.791);
+      border: none;
+      border-radius:18px;
+      color: white;
+      cursor: pointer;
+
+      &:hover{
+        background-color: rgba(231, 46, 46, 0.911);
+      }
+
+      &.logout{
+        padding: 10px;
+        background-color: rgba(48, 127, 218, 0.774);
+        &:hover{
+          background-color: rgb(48, 127, 218);
+        }
+      }
+    }
+  
+}
+
+}
